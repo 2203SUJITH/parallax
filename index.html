@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./parallax.css">
+</head>
+<body>
+
+
+
+
+
+  
+
+  <div class="parallax-section" id="section1">
+    <h2>
+    <p>CAMPS BAY, CAPE TOWN, SOUTH AFRICA</p> 
+  </h2>
+  </div>
+
+  <div class="parallax-section" id="section2">
+    <h2>
+    <p>Railay Beach, Thailand</p>
+  </h2>
+  </div>
+
+  <div class="parallax-section" id="section3">
+    <h1>
+    <p>Shipwreck Beach, Zakynthos, Greece</p>
+    </h1>
+  </div>
+
+  <script>
+    // Simple parallax scrolling effect
+    window.addEventListener('scroll', function() {
+      let scrollPosition = window.pageYOffset;
+
+      document.getElementById('section1').style.backgroundPositionY = -scrollPosition * 0.5 + 'px';
+      document.getElementById('section2').style.backgroundPositionY = -scrollPosition * 0.3 + 'px';
+      document.getElementById('section3').style.backgroundPositionY = -scrollPosition * 0.2 + 'px';
+    });
+  </script>
+
+</body>
+</html>
